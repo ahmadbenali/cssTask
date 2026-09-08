@@ -1,0 +1,30 @@
+body{
+    background-color: antiquewhite;
+}
+div{
+    background-color: white;
+}
+
+.card {
+      background-color: #ffffff;
+      width: 500px;
+      padding: 15px 20px;
+      margin-bottom: 20px;
+    }
+
+.card-1 {
+      border: 1px solid black;
+    }
+
+    .card-2 {
+      border: 1px dashed black;
+    }
+
+    .red-dashed-box {
+      border: 1px dashed red;
+      padding: 5px;
+    }
+    .card-3 {
+      border: 1px solid black;
+      color: #6a1a5b; /* Purple text */
+    }

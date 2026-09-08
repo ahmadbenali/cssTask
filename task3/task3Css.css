@@ -1,0 +1,16 @@
+pre {
+      font-family: Consolas, 'Courier New', monospace;
+      font-size: 18px;
+      font-weight: bold;
+      line-height: 1.4;
+      color: #000000;
+    }
+
+   
+    .property {
+      color: #0055cc; 
+    }
+
+    .value {
+      color: #009933; 
+    }
