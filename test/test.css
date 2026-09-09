@@ -1,0 +1,24 @@
+.container{
+    display: flex;
+    
+}
+
+.box{
+    width: 100px;
+    height: 500 px;
+    font-size: 2em;
+    text-align: center;
+}
+
+#One{
+    background-color: rgb(255, 0, 0);
+}
+#second{
+    background-color: rgb(50, 165, 42);
+}
+#three{
+    background-color: rgb(58, 42, 165);
+}
+#four{
+    background-color: rgb(153, 165, 42);
+}

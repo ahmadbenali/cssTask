@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Positioning & Pseudo-elements</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- FIXED NAVBAR -->
+    <nav class="fixed-nav">
+        <span>Home</span>
+        <span>About</span>
+        <span>Contact</span>
+    </nav>
+
+
+    <!-- PSEUDO-ELEMENTS -->
+    <h1 class="main-title">CSS Positioning Demo</h1>
+
+
+    <!-- 1. STATIC -->
+    <section class="example">
+
+        <h2>1. Static</h2>
+
+        <div class="box static-box">
+            Static
+        </div>
+
+        <p>
+            Static is the default position.
+            The element stays in the normal document flow.
+        </p>
+
+    </section>
+
+
+    <!-- 2. RELATIVE -->
+    <section class="example">
+
+        <h2>2. Relative</h2>
+
+        <div class="relative-area">
+
+            <div class="box normal-box">
+                Normal
+            </div>
+
+            <div class="box relative-box">
+                Relative
+            </div>
+
+        </div>
+
+        <p>
+            The relative box moves from its original position,
+            but its original space is still reserved.
+        </p>
+
+    </section>
+
+
+    <!-- 3. ABSOLUTE -->
+    <section class="example">
+
+        <h2>3. Absolute</h2>
+
+        <div class="absolute-parent">
+
+            Parent
+
+            <div class="absolute-child">
+                Absolute
+            </div>
+
+        </div>
+
+        <p>
+            The absolute element is positioned relative
+            to the nearest positioned parent.
+        </p>
+
+    </section>
+
+
+    <!-- 4. STICKY -->
+    <section class="example sticky-section">
+
+        <h2 class="sticky-title">
+            4. Sticky
+        </h2>
+
+        <p>
+            Scroll down and notice how this heading
+            sticks to the top.
+        </p>
+
+        <p>
+            Sticky behaves normally at first,
+            then stays at the specified position
+            when we scroll.
+        </p>
+
+        <!-- Creates space so we can demonstrate scrolling -->
+        <div class="filler"></div>
+
+    </section>
+
+
+    <!-- 5. FIXED -->
+    <section class="example">
+
+        <h2>5. Fixed</h2>
+
+        <p>
+            The navigation bar at the top uses
+            position: fixed.
+        </p>
+
+        <p>
+            Scroll the page and notice that the navbar
+            stays in the same position.
+        </p>
+
+    </section>
+
+
+    <!-- Extra space to demonstrate scrolling -->
+    <div class="bottom-space"></div>
+
+</body>
+
+</html>

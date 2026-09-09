@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CSS Position Examples</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 20px;
+      height: 2000px; 
+    }
+
+    .box {
+      padding: 15px;
+      margin-bottom: 20px;
+      border-radius: 6px;
+      color: #fff;
+      font-weight: bold;
+    }
+
+   
+    .static-box {
+      position: static;
+      background-color: #6c757d;
+    }
+
+    .static-box::before{
+        content:" \" ";
+    }
+
+   
+    .relative-box {
+      position: relative;
+      top: 15px;
+      left: 30px;
+      background-color: #0d6efd;
+    }
+
+    
+    .parent-container {
+      position: relative;
+      height: 150px;
+      border: 2px dashed #333;
+      margin-top: 40px;
+      padding: 10px;
+      background-color: #f8f9fa;
+    }
+
+    .absolute-box {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-color: #dc3545;
+    }
+
+    
+    .fixed-box {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: #198754;
+      z-index: 1000;
+    }
+
+   
+    .sticky-box {
+      position: sticky;
+      top: 0;
+      background-color: #fd7e14;
+      z-index: 999;
+    }
+  </style>
+</head>
+<body>
+
+  
+  <div class="box sticky-box">
+    Sticky Box (Sticks to top: 0 while scrolling)
+  </div>
+
+  
+  <div class="box static-box">
+    Static Box (Default flow, top/left properties have no effect)
+  </div>
+
+  
+  <div class="box relative-box">
+    Relative Box (Shifted 15px down and 30px right from its normal place)
+  </div>
+
+
+  <div class="parent-container">
+    <span style="color: #333;">Parent Container (<code>position: relative</code>)</span>
+    <div class="box absolute-box">
+      Absolute Box (Pinned 20px from top and right of the parent)
+    </div>
+  </div>
+
+
+  <div class="box fixed-box">
+    Fixed Box (Pinned to viewport bottom-right)
+  </div>
+
+
+</body>
+</html>

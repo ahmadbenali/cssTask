@@ -1,0 +1,35 @@
+.main{
+    display: flex;
+    position: static;
+    border: 1px dotted black;
+    margin-bottom: 70px;
+    position: relative;
+}
+.box{
+    width: 90px;
+    height: 90px;
+    padding: 4px;
+    box-sizing: border-box;
+    background-color: red;
+    margin-right: 2px;
+}
+.static .two{
+    background-color: #0b8017;
+}
+.body:last-child{
+    margin-right: 0px;
+}
+
+.Relative .two{
+    position: relative;
+    background-color: #0b8017;
+    top: 30px;
+    left:30px;
+}
+
+.Absolute .two{
+    position: absolute;
+     background-color: #0b8017;
+     top: 10px;
+     left:10px;
+}
