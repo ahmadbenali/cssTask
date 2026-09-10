@@ -1,15 +1,14 @@
 .main{
-    display: flex;
-    position: static;
-    border: 1px dotted black;
+    display: inline-flex;
+    border:3px dotted black;
     margin-bottom: 70px;
     position: relative;
+
 }
 .box{
     width: 90px;
     height: 90px;
     padding: 4px;
-    box-sizing: border-box;
     background-color: red;
     margin-right: 2px;
 }

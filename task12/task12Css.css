@@ -1,0 +1,21 @@
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+    height: 60%;
+    gap:12px;
+}
+body{
+    padding: 10px;
+}
+.box{
+    flex: 0 0 calc((100% - 24px) / 3);
+    overflow: hidden;
+    aspect-ratio: 4 / 3;
+}
+.box img{
+ width: 400px;
+ height: 300px;
+ display: block;
+ object-fit: cover;
+}
